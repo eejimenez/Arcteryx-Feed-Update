@@ -126,6 +126,8 @@ Example
 
 ![purge-metadata-cache](/images/purge-cache-metadata-staging.png)
 
+Then you need to congure the finders to use the staging metadata and staging results. You can see that in the next video tutorials.
+
 
 # Video Tutorials
 - Update feed in production: https://www.loom.com/share/7b69b12109c64f21bbc8ff32a7940201?sid=dedfffeb-db2b-4d79-8dee-7d99ef5c0a7e

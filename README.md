@@ -138,3 +138,8 @@ https://www.loom.com/share/34fd261a2da84292a42949e0adf4b5d6?sid=9a72b667-f8f1-4a
 
 - Update staging with a custom xml: https://www.loom.com/share/05205bc78233447cb73da55d703f64d5?sid=1dea248d-9cbb-4c3a-b339-e3fdc12be89f
 
+- Use staging links in footwear finder.
+https://www.loom.com/share/16c4dcf6cad34210a70913a3213fb1ec?sid=574d9162-f9db-4c4d-adfe-4c8b363a66b7
+
+- Use staging links in jacket finder:
+https://www.loom.com/share/d772de4d103c44bba233a9357713e8ce?sid=7d00b317-c313-4ac1-8ab8-f92b9dc58f3e

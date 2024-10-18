@@ -25,13 +25,13 @@ You can update the categories file by running a transformation in the workflow p
 }
 ```
 
-Sample
+Example
 
 ![run-categories-update](/images/run-categories-update.png)
 
 ### Update **filters** data in the metadata script:
 
-You must wait for confirmation from the operations team to run this transformation because they must perform a product synchronization and add an access token to this [coda table](https://coda.io/d/Arcteryx-Tokens_dAGZTy3PFp_/Arcteryx-Jacket-Footwear_suIg0MWh#_lu8TZy4Z).
+You must wait for confirmation from the operations team to run this transformation because they need to perform a product synchronization and add an access token to this [coda table](https://coda.io/d/Arcteryx-Tokens_dAGZTy3PFp_/Arcteryx-Jacket-Footwear_suIg0MWh#_lu8TZy4Z).
 
 You can update the metadata script file by running a transformation in the workflow pipeline with this payload
 
@@ -45,19 +45,19 @@ You can update the metadata script file by running a transformation in the workf
 ![run-footwear-transformation](/images/run-footwear-transformation.png)
 
 
-### Clean the CDN cache for the metadata file.
-You can clean the CDN cache with this [jenkins pipeline](http://jenkins.cartfulsolutions.com:8080/job/environments/job/prod/job/cache/job/purge/).
+### Flush the CDN cache for the metadata file.
+You can flush the CDN cache with this [Jenkins pipeline](http://jenkins.cartfulsolutions.com:8080/job/environments/job/prod/job/cache/job/purge/).
 
-Urls for the pipeline payload:
+Pipeline payload:
 `https://embed.cartfulsolutions.com/arcteryx/metadata.js`
 `https://embed.cartfulsolutions.com/arcteryx/footwear/metadata.js`
 
-Sample
+Example
 
 ![purge-metadata-cache](/images/purge-metadata-cache.png)
 
 
-# Update Arcteryx Feed in UAT env
+# Update Arcteryx Feed in the UAT environment
 
 ## Requirements
 * AWS user with read and execute permissions on the [workflow pipeline](https://us-east-1.console.aws.amazon.com/lambda/home?region=us-east-1#/functions/finder-workflow-pipeline-prod?tab=testing) lambda function.
@@ -66,8 +66,8 @@ Sample
 
 ## Steps
 
-### Update UAT environment with latest changes from production
-You can update the uat env with the deploy_update [jenkins pipeline](http://jenkins.cartfulsolutions.com:8080/job/environments/job/dev/job/deploy_update/build?delay=0sec) with the following parameters.
+### Update the UAT environment with latest changes from production
+You can update the uat environment using the deploy_update [pipeline](http://jenkins.cartfulsolutions.com:8080/job/environments/job/dev/job/deploy_update/build?delay=0sec) with the following parameters.
 
 - DEPLOY_API: yes
 - API_VERSION: latest
@@ -77,7 +77,7 @@ You can update the uat env with the deploy_update [jenkins pipeline](http://jenk
 - REFRESH_DATA: yes
 - SIMPLE_AUTOUNDATE: no
 
-Sample
+Example
 ![update-uat-environment](/images/update-uat-environment.png)
 
 ### Update **filters** data in the metadata script for the UAT environment:
@@ -89,7 +89,7 @@ You have to get the access token from Cartful Admin of the uat environment by fo
 
 ![network-tab-in-products-page](/images/network-tab-in-products-page.png)
 
-- Click on the **Export Product** button then in the network tool you will see a request with name **product-excel**. 
+- Click on the **Export Product** button, and then in the Network tool you will see a request with name **product-excel**. 
 
 ![product-excel-request](/images/product-excel-request.png)
 
@@ -97,13 +97,13 @@ You have to get the access token from Cartful Admin of the uat environment by fo
 
 ![copy-product-excel-url](/images/copy-product-excel-request.png)
 
-Once you get the product-excel url you have to add the url in the cell of token column and staging row of this [coda table](https://coda.io/d/Arcteryx-Tokens_dAGZTy3PFp_/Arcteryx-Jacket-Footwear_suIg0MWh#_lu8TZy4Z).
+Once you get the product-excel url you have to add it in the cell of token column of this [coda table](https://coda.io/d/Arcteryx-Tokens_dAGZTy3PFp_/Arcteryx-Jacket-Footwear_suIg0MWh#_lu8TZy4Z).
 
-Sample
+Example
 
 ![paste-token-in-coda-table](/images/past-token-in-coda-table.png)
 
-Now you can update the metadata script file of staging by running a transformation in the workflow pipeline with this payload
+Now you can update the metadata file of staging by running a transformation in the workflow pipeline with this payload
 
 ```
 {
@@ -115,14 +115,14 @@ Now you can update the metadata script file of staging by running a transformati
 ![run-footwear-transformation](/images/run-footwear-transformation-staging.png)
 
 
-### Clean the CDN cache for the metadata file of staging.
-You can clean the CDN cache with this [jenkins pipeline](http://jenkins.cartfulsolutions.com:8080/job/environments/job/prod/job/cache/job/purge/).
+### Flush the CDN cache for the metadata file of staging.
+You can flush the CDN cache with this [Jenkins pipeline](http://jenkins.cartfulsolutions.com:8080/job/environments/job/prod/job/cache/job/purge/).
 
-Urls for the pipeline payload:
+Pipeline payload urls:
 `https://embed.cartfulsolutions.com/arcteryx/metadata-staging.js`
 `https://embed.cartfulsolutions.com/arcteryx/footwear/metadata-staging.js`
 
-Sample
+Example
 
 ![purge-metadata-cache](/images/purge-cache-metadata-staging.png)
 

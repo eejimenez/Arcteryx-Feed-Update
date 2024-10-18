@@ -3,9 +3,9 @@
 ## Content
 **[1. Update Arcteryx Feed in Production](#update-arcteryx-feed-in-production)**
 
-**[2. Update Arcteryx Feed in UAT env](#update-arcteryx-feed-in-uat-env)**
+**[2. Update Arcteryx Feed in UAT env](#update-arcteryx-feed-in-the-uat-environment)**
 
-**[3. Troubleshooting](#update-arcteryx-feed-in-uat-env)**
+**[3. Video Tutorials](#video-tutorials)**
 
 # Update Arcteryx Feed in Production
 
@@ -127,5 +127,7 @@ Example
 ![purge-metadata-cache](/images/purge-cache-metadata-staging.png)
 
 
-# Troubleshooting
+# Video Tutorials
+- Update feed in production: https://www.loom.com/share/7b69b12109c64f21bbc8ff32a7940201?sid=dedfffeb-db2b-4d79-8dee-7d99ef5c0a7e
 
+- Update feed en staging:

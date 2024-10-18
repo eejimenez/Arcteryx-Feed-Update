@@ -130,4 +130,11 @@ Example
 # Video Tutorials
 - Update feed in production: https://www.loom.com/share/7b69b12109c64f21bbc8ff32a7940201?sid=dedfffeb-db2b-4d79-8dee-7d99ef5c0a7e
 
-- Update feed en staging:
+- Update feed in staging environment with production feed:
+https://www.loom.com/share/21709adec2d344d89edfe97be545870a?sid=4a9de15d-7e13-4977-a59f-9706c38ae8bd
+
+- Update feed in staging environment with staging feed:
+https://www.loom.com/share/34fd261a2da84292a42949e0adf4b5d6?sid=9a72b667-f8f1-4a2a-a543-86dad10255c6
+
+- Update staging with a custom xml: https://www.loom.com/share/05205bc78233447cb73da55d703f64d5?sid=1dea248d-9cbb-4c3a-b339-e3fdc12be89f
+
